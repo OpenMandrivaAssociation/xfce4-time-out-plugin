@@ -1,22 +1,23 @@
 Summary: 	A time-out plugin for the Xfce panel
-Name: 		xfce-time-out-plugin
+Name: 		xfce4-time-out-plugin
 Version: 	0.1.1
-Release: 	%mkrel 1
-License:	GPL
+Release: 	%mkrel 2
+License:	GPLv2+
 Group: 		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-time-out-plugin
-Source0: 	http://goodies.xfce.org/releases/xfce4-time-out-plugin/xfce4-time-out-plugin-%{version}.tar.bz2
+Source0: 	http://goodies.xfce.org/releases/xfce4-time-out-plugin/%{name}-%{version}.tar.bz2
 Requires:	xfce-panel >= 4.4
 BuildRequires:	xfce-panel-devel >= 4.4
 BuildRequires:	libxfcegui4-devel
 BuildRequires:	perl(XML::Parser)
+Obsoletes:	xfce-time-out-plugin
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 A time-out plugin for the Xfce panel.
 
 %prep
-%setup -qn xfce4-time-out-plugin-%{version}
+%setup -q
 
 %build
 
@@ -27,7 +28,7 @@ A time-out plugin for the Xfce panel.
 rm -rf %{buildroot}
 %makeinstall_std 
 
-%find_lang xfce4-time-out-plugin
+%find_lang %{name}
 
 %post
 %update_icon_cache hicolor
@@ -38,7 +39,7 @@ rm -rf %{buildroot}
 %clean
 rm -rf %{buildroot}
 
-%files -f xfce4-time-out-plugin.lang
+%files -f %{name}.lang
 %defattr(-,root,root)
 %doc ChangeLog COPYING AUTHORS
 %{_libdir}/xfce4/panel-plugins/*
