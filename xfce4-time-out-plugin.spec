@@ -11,7 +11,6 @@ BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 Obsoletes:	xfce-time-out-plugin
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 A time-out plugin for the Xfce panel.
