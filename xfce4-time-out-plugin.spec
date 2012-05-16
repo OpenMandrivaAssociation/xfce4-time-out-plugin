@@ -33,6 +33,5 @@ A time-out plugin for the Xfce panel.
 
 %files -f %{name}.lang
 %doc ChangeLog AUTHORS
-%{_libdir}/xfce4/panel-plugins/*
-%{_datadir}/xfce4/panel-plugins/xfce4-time-out-plugin.desktop
-%{_iconsdir}/hicolor/*/apps/*
+%{_libdir}/xfce4/panel/plugins/*
+%{_datadir}/xfce4/panel/plugins/*
