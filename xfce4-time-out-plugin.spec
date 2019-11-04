@@ -13,6 +13,7 @@ Requires:	xfce4-panel >= 4.8.0
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
 BuildRequires:	pkgconfig(libxfce4ui-1)
 BuildRequires:	perl(XML::Parser)
+BuildRequires:  pkgconfig(gtk+-3.0)
 
 %description
 A time-out plugin for the Xfce panel.
