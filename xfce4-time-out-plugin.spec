@@ -3,7 +3,7 @@
 
 Summary: 	A time-out plugin for the Xfce panel
 Name: 		xfce4-time-out-plugin
-Version: 	1.0.3
+Version: 	1.1.0
 Release: 	1
 License:	GPLv2+
 Group: 		Graphical desktop/Xfce
