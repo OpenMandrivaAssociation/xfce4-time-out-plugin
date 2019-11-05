@@ -11,7 +11,7 @@ URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-time-out-plugin
 Source0: 	http://archive.xfce.org/src/panel-plugins/xfce4-time-out-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel >= 4.8.0
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
-BuildRequires:	pkgconfig(libxfce4ui-1)
+BuildRequires:	pkgconfig(libxfce4ui-2)
 BuildRequires:	perl(XML::Parser)
 BuildRequires:  pkgconfig(gtk+-3.0)
 
