@@ -1,5 +1,7 @@
 %define url_ver %(echo %{version} | cut -c 1-3)
 %define _disable_rebuild_configure 1
+%define _disable_ld_no_undefined 1
+%define _disable_lto 1
 
 Summary: 	A time-out plugin for the Xfce panel
 Name: 		xfce4-time-out-plugin
