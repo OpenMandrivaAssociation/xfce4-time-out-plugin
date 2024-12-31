@@ -5,12 +5,12 @@
 
 Summary: 	A time-out plugin for the Xfce panel
 Name: 		xfce4-time-out-plugin
-Version: 	1.1.3
+Version: 	1.1.4
 Release: 	1
 License:	GPLv2+
 Group: 		Graphical desktop/Xfce
 URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-time-out-plugin
-Source0: 	http://archive.xfce.org/src/panel-plugins/xfce4-time-out-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
+Source0: 	https://archive.xfce.org/src/panel-plugins/xfce4-time-out-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel >= 4.8.0
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
 BuildRequires:	pkgconfig(libxfce4ui-2)
@@ -21,7 +21,7 @@ BuildRequires:  pkgconfig(gtk+-3.0)
 A time-out plugin for the Xfce panel.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 
